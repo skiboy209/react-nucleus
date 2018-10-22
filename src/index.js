@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./Navbar.js";
 import {BrowserRouter as Router}  from 'react-router-dom';
 import ReactRouter from "./router/Router.js"
 import "index.scss";
@@ -14,8 +13,7 @@ import "index.scss";
 
 ReactDOM.render(
     <Router>
-
-    <ReactRouter/>
-</Router>,
+        <ReactRouter/>
+    </Router>,
   document.getElementById("root")
 );

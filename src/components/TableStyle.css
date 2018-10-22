@@ -1,0 +1,17 @@
+h1{
+  text-align:center;
+  margin-top: 10rem;
+}
+table{
+  border: 2px solid black;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+td{
+  background-color: grey;
+}
+tr{
+  background-color: grey;
+}

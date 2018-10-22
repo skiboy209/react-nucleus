@@ -2,24 +2,39 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
+  navStyle = {
+    textDecoration: "none",
+    color: "white"
+  };
   active = {
     fontWeight: "bold",
-    color: "red"
+    color: "silver"
   };
 
   header = {
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    opacity: "80",
+    backgroundColor: "black",
     display: "flex",
+    textDecoration: "none",
     justifyContent: "space-evenly",
-    listStyle: "none"
+    listStyle: "none",
   };
   render() {
     return (
       <div style={this.header}>
-        <NavLink exact to="/" activeStyle={this.active}>
+        <NavLink exact to="/" style={this.navStyle} activeStyle={this.active}>
           Home
         </NavLink>
-        <NavLink to="/posts" activeStyle={this.active}>
+        <NavLink to="/posts" style={this.navStyle} activeStyle={this.active}>
           Posts
+        </NavLink>
+        <NavLink to="/about" style={this.navStyle} activeStyle={this.active}>
+          About
+        </NavLink>
+        <NavLink to="/table" style={this.navStyle} activeStyle={this.active}>
+          Table
         </NavLink>
       </div>
     );
